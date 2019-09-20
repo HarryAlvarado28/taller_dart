@@ -12,7 +12,7 @@ Aprender ¿qué es Dart? su potencial y sintaxis.
 **Dart** es un lenguaje optimizado por el cliente para aplicaciones rápidas en cualquier plataforma.
 
 Potencial
-- Optimizadopara UI
+- Optimizado para UI
 - Desarrollo productivo
 - Rápido en todas las plataformas
 
@@ -36,6 +36,7 @@ main() {
 - List
 - Sets
 - Maps
+- Variables
 
 ### Ejemplos de Tipo de datos
 
@@ -191,3 +192,40 @@ void main() {
 }
 ```
 
+#### Variables - *(var, final & const)*
+
+```dart
+void main() {
+  // Variables y constantes
+  
+  var x = 3;
+  final y = 4;
+  const z = 5;
+  
+  print(x);
+  print(y);
+  print(z);
+  
+  x = x + 10;
+  //y = y + 3; // No pueden cambiar
+  //z = z + 4; // No pueden cambiar
+  
+  print(x);
+  print(y);
+  print(z);
+  
+  final List<String> frutas = ['Pera', 'Piña', 'Uva'];
+  const List<String> colores = ['Rojo', 'Verde', 'Azul'];
+  
+  // Caso particular
+  frutas[1] = 'Limon';
+  frutas.add('Manzana');
+  
+  // Caso particular, no permitido con CONST
+  //colores.add('Morado'); 
+  //colores[2] = 'Amarillo'; 
+  
+  print(frutas);
+  print(colores);
+}
+```
