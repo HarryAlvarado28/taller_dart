@@ -9,7 +9,7 @@ Aprender ¿qué es Dart? su potencial y sintaxis.
 
 ## Concepto
 
-**Dart** es un lenguaje optimizado por el cliente para aplicaciones rápidas en cualquier plataforma.
+**Dart** es un lenguaje orientado a objetos que opcionalmente puede compilarse en JavaScript. Admite una amplia gama de ayudas de programación como interfaces, clases, colecciones, genéricos y escritura opcional.
 
 Potencial
 - Optimizado para UI
@@ -23,9 +23,14 @@ main() {
 }
 ```
 
+## Presentación del taller
+
+![pitch_teorico](pitch_teorico.gif)
+
 ## Contenido
 
 ### Palabras reservadas
+
 ![palabras-reservada](Palabras-Reservadas.png)
 
 ### Tipo de datos
