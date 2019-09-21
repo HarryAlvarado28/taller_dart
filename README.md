@@ -12,6 +12,7 @@ Aprender ¿qué es Dart? su potencial y sintaxis.
 **Dart** es un lenguaje orientado a objetos que opcionalmente puede compilarse en JavaScript. Admite una amplia gama de ayudas de programación como interfaces, clases, colecciones, genéricos y escritura opcional.
 
 Potencial
+
 - Optimizado para UI
 - Desarrollo productivo
 - Rápido en todas las plataformas
@@ -232,5 +233,81 @@ void main() {
   
   print(frutas);
   print(colores);
+}
+```
+
+### Operadores
+
+- Matemáticos
+- Asignación
+
+#### Operadores Matemáticos
+
+```dart
+void main() {
+  // Operadores
+  
+  int a = 12 + 8;      // + 20, suma
+  a = 20 - 10;         // - 10, resta
+  a = 5 * 3;           // * 15, multiplicación
+  
+  double b = 12 / 2;   // / 6, divición
+  b = 10.0 % 3;        // % 1, residuo (sobrante de la divición)
+  b = -b;              // -expr, cambia el signo del valor
+  
+  int c = 10 ~/ 3;     // ~/ 3, toma la parte entera de la divición
+  
+  int d = 5;
+  
+  d++;        // ++ 6, incrementa en uno
+  d--;        // -- 4, decrementa en uno
+  
+  d += 2;     // += 7, incrementa en 2
+  d -= 3;     // -= 2, decrementa en 3
+}
+```
+
+#### Operadores de Asignación
+
+```dart
+void main() {
+  // Operadores de asignación
+  int a = 10;
+  int b = 5;
+  
+  b ??= 20;  // asigna el valor únicamente si la variable es null.
+  
+  print(b);
+  
+  // Operador condicional ternario
+  int c = 28;
+  String resp = c > 25 ? 'C es mayor a 25': 'C es menor a 25';
+  print(resp);
+  
+  // Operadores condicionales
+  int d = b ?? a ?? 23;
+  print(d);
+  
+  // Operadores relacionales, todos retornal un valor booleano
+  /**
+   * > mayor que
+   * < menor que
+   * >= mayor e igual que
+   * <= menor e igual que
+   * == revisa si dos objetos son iguales
+   * != revisa si dos objetos son distintos
+   */
+   
+  String fruta = 'manzana';
+  String fruit = 'apple';
+  
+  print(fruta == fruit);  // false
+  print(fruta != fruit);  // true
+  
+  // Operadores de tipo
+  int i = 10;
+  String j = '10';
+  
+  print(i is int);  
 }
 ```
